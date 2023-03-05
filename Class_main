@@ -1,0 +1,55 @@
+import java.util.*;
+public class Class_main {
+
+	public static void main(String[] args) {
+		Class_data c=new Class_data();
+		Class_methods n=new Class_methods();
+	       
+		Scanner s=new Scanner(System.in);
+		System.out.println("enter name");
+		String name=s.nextLine();
+		c.setName(name);
+		System.out.println("enter account number");
+		String acc_no=s.nextLine();
+		c.setAccount_number(acc_no);
+		System.out.println("enter branch name");
+		String branch=s.nextLine();
+		c.setBranch_name(branch);
+		int choice;
+		do {
+		System.out.println("1.Withdrawl");
+		System.out.println("2.Deposit");
+		System.out.println("3.Balane enquiry");
+		System.out.println("4.Account details");
+		System.out.println("5.Exit");
+		System.out.println("please enter option");
+	    choice=s.nextInt();
+		switch(choice)
+		{
+		case 1:System.out.println("enter withdrawl amnt");
+		       int wamnt=s.nextInt();
+		       c.setWamnt(wamnt);
+		       n.withdrawl(c);            // check withdrawl
+		       
+		       
+			  break;
+		case 2:System.out.println("enter deposit amount");
+		       int damnt=s.nextInt();
+		       c.setDamnt(damnt);
+		       n.deposit(c);              // check deposit
+			  break;
+		case 3:System.out.println("balance enquiry");
+		       n.bal_enquiry(c);          // check balance enquiry
+			break;
+		case 4:System.out.println("account details");
+		        n.account_det(c);         // check account details
+			break;
+		case 5:System.out.println("thankyou");  // to exit
+			break;
+		default:System.out.println("invalid option");  // invalid options
+			break;
+		}
+		}while(choice!=5);
+	}
+
+}
