@@ -1,0 +1,52 @@
+
+
+public class Class_data {
+// the person's details are maintained as private
+	 private String name;         
+	 private String Account_number;
+	 private String Branch_name;
+	 private int bal=10000;
+	 private int wamnt;
+	 private int damnt;
+	public int getWamnt() {
+		return wamnt;
+	}
+	public void setWamnt(int wamnt) {
+		this.wamnt = wamnt;
+	}
+	public int getDamnt() {
+		return damnt;
+	}
+	public void setDamnt(int damnt) {
+		this.damnt = damnt;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAccount_number() {
+		return Account_number;
+	}
+	public void setAccount_number(String account_number) {
+		Account_number = account_number;
+	}
+	public String getBranch_name() {
+		return Branch_name;
+	}
+	public void setBranch_name(String branch_name) {
+		Branch_name = branch_name;
+	}
+	public int getBal() {
+		return bal;
+	}
+	public void setBal(int bal) {
+		this.bal = bal;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
