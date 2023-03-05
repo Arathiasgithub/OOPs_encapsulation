@@ -1,0 +1,32 @@
+public class Class_methods  {
+	// the abstract methods are detailed
+static Class_methods m=new Class_methods();
+	void withdrawl(Class_data m)
+	{
+		m.setBal(m.getBal()-m.getWamnt());
+		System.out.println(m.getBal());
+		
+	}
+	void deposit(Class_data m)
+	{
+		m.setBal(m.getBal()+m.getDamnt());
+		System.out.println(m.getBal());
+	}
+	void bal_enquiry(Class_data m)
+	{
+		m.setBal(m.getBal()-m.getWamnt());
+		System.out.println(m.getBal());
+	}
+	void account_det(Class_data m)
+	{
+		System.out.println("the name is "+m.getName());
+		System.out.println("the account no is "+m.getAccount_number());
+		System.out.println("the branch name is"+m.getBranch_name());
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+
+}
